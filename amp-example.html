@@ -57,6 +57,17 @@ An AMP HTML tutorial - learn the different building blocks of an AMP HTML file. 
     Check out the [other examples](/) to learn more about AMP.
   -->
   <amp-img src="/img/amp.jpg" width="1080" height="610" layout="responsive"></amp-img>
-
+<form
+  method="post"
+  action-xhr="/form/echo-json/post"
+  target="_blank">
+  <amp-date-picker
+      mode="overlay"
+      layout="container"
+      input-selector="[name=deliverydate]">
+    <label for="deliverydate">Deliver Date:</label>
+    <input type="text" name="deliverydate">
+  </amp-date-picker>
+</form>
 </body>
 </html>
